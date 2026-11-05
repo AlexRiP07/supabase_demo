@@ -51,4 +51,4 @@ if __name__ == "__main__":
     #print(model_contactos.buscarContacto(1))
     #print(model_contactos.insertarContacto("Alexander", "alexander@email.com", "1111234"))
     print(model_contactos.borrarContacto(3))
-   print(model_contactos.actualizarContacto(1))
+    print(model_contactos.actualizarContacto(1))
