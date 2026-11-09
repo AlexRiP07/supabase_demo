@@ -17,15 +17,19 @@ class InsertarContacto:
         #obtiene el valor del input nombre
         nombre = formulario['nombre']
         #obtiene el valor del input email
-        email = formulario ['email']
+        email = formulario['email']
         #obtiene el valor del input telefono
         telefono = formulario['telefono']
 
         #imprime los datos para verificar que se obtienes los valores
         #de forma correcta
-        print(f"Nombre: {'nombre'}")
-        print(f"Email: {'telefono'}")
-        print(f"Telefono: {'telefono'}")
+        print(f"Nombre: {nombre}")
+        print(f"Email: {email}")
+        print(f"Telefono: {telefono}")
+
+        #inserta el contacto en la base de datos de Supabase
+        model_contactos = ModelContactos()
+        model_contactos.insertarContacto(nombre, email, telefono)
 
         html = """
             <h1>Contacto almacenado correctamente</h1>
