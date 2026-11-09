@@ -28,7 +28,7 @@ class InsertarContacto:
         print(f"Telefono: {telefono}")
 
         #inserta el contacto en la base de datos de Supabase
-        model_contactos = ModelContactos
+        model_contactos = ModelContactos()
 
         datos = model_contactos.insertarContacto(nombre,email,telefono)
 
@@ -36,4 +36,6 @@ class InsertarContacto:
             <h1>Contacto almacenado correctamente</h1>
             <a href='/contactos'>Regresar</a>
         """
+        #indica al navegador que la respuesta es una pagina HTML
+        web.header('Content-Type', 'text/html; charset=utf-8')
         return html
