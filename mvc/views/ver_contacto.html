@@ -1,12 +1,9 @@
-<form name="contacto" method="POST">
-    <label for="nombre">Nombre</label>
-    <input type="text" name="nombre" id="nombre"><br>
+$def with (contacto)
+<h1>Ver contacto</h1>
 
-    <label for="email">Email</label>
-    <input type="email" name="email" id="email"><br>
+<p><strong>ID:</strong> $contacto['id_contacto']</p>
+<p><strong>Nombre:</strong> $contacto['nombre']</p>
+<p><strong>Email:</strong> $contacto['email']</p>
+<p><strong>Teléfono:</strong> $contacto['telefono']</p>
 
-    <label for="telefono">Télefono</label>
-    <input type="tel" name="telefono" id="telefono"><br>
-
-    <button type="submit" name="regresar" id="regresar">Regresar</button>
-</form>
+<a href="/contactos">Regresar</a>
