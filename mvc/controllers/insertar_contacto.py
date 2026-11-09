@@ -23,9 +23,9 @@ class InsertarContacto:
 
         #imprime los datos para verificar que se obtienes los valores
         #de forma correcta
-        print(f"Nombre: {nombre}")
-        print(f"Email: {email}")
-        print(f"Telefono: {telefono}")
+        #print(f"Nombre: {nombre}")
+        #rint(f"Email: {email}")
+        #print(f"Telefono: {telefono}")
 
         #inserta el contacto en la base de datos de Supabase
         model_contactos = ModelContactos()
