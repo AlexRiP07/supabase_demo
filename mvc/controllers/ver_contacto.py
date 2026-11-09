@@ -19,3 +19,7 @@ class VerContacto:
 
         #envia a ver_contacto.html el primer (y unico) registro
         return render.ver_contacto(datos[0])
+
+    #el boton Regresar envia el formulario y regresa a la lista de contactos
+    def POST(self, id_contacto):
+        raise web.seeother('/contactos')
