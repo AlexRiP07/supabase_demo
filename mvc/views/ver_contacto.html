@@ -1,5 +1,5 @@
 $def with (contacto)
-<form name="contacto" method="POST">
+<form name="contacto" method="GET" action="/contactos">
     <label for="nombre">Nombre</label>
     <input type="text" name="nombre" id="nombre" value="$contacto['nombre']" readonly><br>
 
@@ -9,5 +9,5 @@ $def with (contacto)
     <label for="telefono">Teléfono</label>
     <input type="tel" name="telefono" id="telefono" value="$contacto['telefono']" readonly><br>
 
-    <button type="submit" name="regresar" id="regresar">Regresar</button>
+    <button type="submit" oneclick="location.href='/contactos'" name="regresar" id="regresar">Regresar</button>
 </form>
